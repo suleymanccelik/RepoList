@@ -1,23 +1,44 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+import com.suleymancelik.github.buildsrc.Libs
+
 buildscript {
-    ext.kotlin_version = "1.4.10"
+    ext.kotlin_version = '1.4.10'
+    ext.kotlin_version = Libs.Kotlin.version
+    ext.buildConfig = [
+            'compileSdk': 29,
+            'minSdk'    : 21,
+            'targetSdk' : 29,
+    ]
     repositories {
         google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
         jcenter()
     }
-    dependencies {
-        classpath "com.android.tools.build:gradle:4.1.1"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+    dependencies {
+        classpath Libs.androidGradlePlugin
+
+        classpath Libs.Kotlin.gradlePlugin
+        classpath Libs.Kotlin.extensions
+
+        classpath Libs.realmGradlePlugin
+        classpath Libs.AndroidX.Navigation.safeArgs
     }
+}
+
+subprojects {
+
 }
 
 allprojects {
     repositories {
         google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
         jcenter()
+        mavenLocal()
     }
 }
 

@@ -1,19 +1,31 @@
+import com.suleymancelik.github.buildsrc.Libs
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+}
+
+kapt {
+    correctErrorTypes = true
+    useBuildCache = true
+}
+
+androidExtensions {
+    experimental = true
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "com.suleymancelik.github"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -33,13 +45,42 @@ android {
 }
 
 dependencies {
+    def multiDex = "2.0.1"
+    implementation "androidx.multidex:multidex:$multiDex"
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation project(":core")
+    implementation project(":data")
+    implementation project(":common-ui")
+    implementation project(":ui-list")
+    implementation Libs.Kotlin.stdlib
+
+    implementation Libs.AndroidX.appcompat
+    implementation Libs.AndroidX.browser
+    implementation Libs.AndroidX.recyclerview
+    implementation Libs.AndroidX.preference
+    implementation Libs.AndroidX.constraintlayout
+    implementation Libs.AndroidX.coreKtx
+    implementation Libs.AndroidX.Fragment.fragment
+    implementation Libs.AndroidX.Fragment.fragmentKtx
+    implementation Libs.AndroidX.Navigation.fragment
+    implementation Libs.AndroidX.Navigation.ui
+    implementation Libs.AndroidX.Lifecycle.viewmodel
+
+    implementation Libs.AndroidX.Work.runtimeKtx
+
+    implementation Libs.Google.material
+
+    implementation Libs.mvRx
+
+    implementation Libs.Dagger.dagger
+    implementation Libs.Dagger.androidSupport
+    kapt Libs.Dagger.compiler
+    kapt Libs.Dagger.androidProcessor
+
+    compileOnly Libs.AssistedInject.annotationDagger2
+    kapt Libs.AssistedInject.processorDagger2
+
+    testImplementation Libs.junit
+    androidTestImplementation Libs.AndroidX.Test.junitX
+    androidTestImplementation Libs.AndroidX.Test.espressoCore
 }
