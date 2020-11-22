@@ -1,0 +1,22 @@
+com/suleymancelik/github/ui/list/ui/RepoListWork_Factory.java
+ com.suleymancelik.github.ui.list.ui.RepoListWork_Factory
+com/suleymancelik/github/ui/list/di/AssistedInject_RepoListModule.java
+ com.suleymancelik.github.ui.list.di.AssistedInject_RepoListModule
+com/suleymancelik/github/ui/list/ui/RepoListViewModel_AssistedFactory_Factory.java
+ com.suleymancelik.github.ui.list.ui.RepoListViewModel_AssistedFactory_Factory
+com/suleymancelik/github/ui/list/databinding/ItemRepoListBinding.java
+ com.suleymancelik.github.ui.list.databinding.ItemRepoListBinding
+com/suleymancelik/github/ui/list/ui/epoxy/RepoListItemModel_.java
+ com.suleymancelik.github.ui.list.ui.epoxy.RepoListItemModel_
+com/suleymancelik/github/ui/list/BuildConfig.java
+ com.suleymancelik.github.ui.list.BuildConfig
+com/suleymancelik/github/ui/list/ui/RepoListRepository_Factory.java
+ com.suleymancelik.github.ui.list.ui.RepoListRepository_Factory
+com/suleymancelik/github/ui/list/databinding/FragmentRepoListBinding.java
+ com.suleymancelik.github.ui.list.databinding.FragmentRepoListBinding
+com/suleymancelik/github/ui/list/ui/epoxy/RepoListItemModelBuilder.java
+ com.suleymancelik.github.ui.list.ui.epoxy.RepoListItemModelBuilder
+com/suleymancelik/github/ui/list/ui/RepoListViewModel_AssistedFactory.java
+ com.suleymancelik.github.ui.list.ui.RepoListViewModel_AssistedFactory
+com/suleymancelik/github/ui/list/ui/RepoListRepository_MembersInjector.java
+ com.suleymancelik.github.ui.list.ui.RepoListRepository_MembersInjector

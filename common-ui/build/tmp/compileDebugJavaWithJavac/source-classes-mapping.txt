@@ -1,0 +1,8 @@
+com/suleymancelik/github/common/ui/databinding/IncludeSystemErrorBinding.java
+ com.suleymancelik.github.common.ui.databinding.IncludeSystemErrorBinding
+com/suleymancelik/github/common/ui/databinding/IncludeSearchBarBinding.java
+ com.suleymancelik.github.common.ui.databinding.IncludeSearchBarBinding
+com/suleymancelik/github/common/ui/BuildConfig.java
+ com.suleymancelik.github.common.ui.BuildConfig
+com/suleymancelik/github/common/ui/databinding/IncludeNoConnectionBinding.java
+ com.suleymancelik.github.common.ui.databinding.IncludeNoConnectionBinding

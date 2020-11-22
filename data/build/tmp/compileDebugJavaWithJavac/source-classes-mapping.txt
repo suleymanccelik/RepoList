@@ -1,0 +1,2 @@
+com/suleymancelik/github/data/BuildConfig.java
+ com.suleymancelik.github.data.BuildConfig

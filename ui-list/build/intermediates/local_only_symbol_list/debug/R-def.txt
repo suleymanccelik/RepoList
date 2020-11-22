@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+drawable action_favorite
+drawable action_favorite_selected
+id card_view
+id item_image_loved_no
+id item_image_loved_yes
+id no_connection_view
+id progressBar
+id rcl_repo_list
+id searchView
+id service_operation_container
+id system_error_view
+id txt_repo_name
+id txt_repo_star_count
+layout fragment_repo_list
+layout item_repo_list

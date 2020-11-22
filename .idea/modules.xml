@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Github_Account.iml" filepath="$PROJECT_DIR$/.idea/modules/Github_Account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Github_Account.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Github_Account.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Github_Account.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Github_Account.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common-ui/Github_Account.common-ui.iml" filepath="$PROJECT_DIR$/.idea/modules/common-ui/Github_Account.common-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Github_Account.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Github_Account.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/Github_Account.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/Github_Account.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui-detail/Github_Account.ui-detail.iml" filepath="$PROJECT_DIR$/.idea/modules/ui-detail/Github_Account.ui-detail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui-list/Github_Account.ui-list.iml" filepath="$PROJECT_DIR$/.idea/modules/ui-list/Github_Account.ui-list.iml" />
+    </modules>
+  </component>
+</project>

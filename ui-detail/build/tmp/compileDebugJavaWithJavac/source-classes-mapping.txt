@@ -1,0 +1,4 @@
+com/suleymancelik/github/ui/detail/databinding/FragmentRepoDetailBinding.java
+ com.suleymancelik.github.ui.detail.databinding.FragmentRepoDetailBinding
+com/suleymancelik/github/ui/detail/BuildConfig.java
+ com.suleymancelik.github.ui.detail.BuildConfig
