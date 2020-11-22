@@ -15,18 +15,18 @@ import kotlinx.coroutines.launch
 @ExperimentalCoroutinesApi
 class RepoListViewModel @AssistedInject constructor(
     @Assisted state: RepoListState,
-    private val institutionListWork: RepoListWork
+    private val repoListWork: RepoListWork
 ) : BaseViewModel<RepoListState>(state) {
 
-    fun provideInstitutionList(categoryCode: String, cityCode: Int) {
+    fun makeSearchOperation(userName: String) {
         viewModelScope.launch {
-            val job = async(institutionListWork.dispatcher) {
-                institutionListWork(RepoListWork.Params(categoryCode))
+            val job = async(repoListWork.dispatcher) {
+                repoListWork(RepoListWork.Params(userName))
             }
             job.await()
         }
 
-        viewModelScope.launchObserve(institutionListWork) {
+        viewModelScope.launchObserve(repoListWork) {
             it.execute { result ->
                 try {
                     val list = result.invoke()?.getOrThrow()

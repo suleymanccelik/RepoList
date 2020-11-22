@@ -39,6 +39,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -52,6 +56,8 @@ dependencies {
     implementation project(":data")
     implementation project(":common-ui")
     implementation project(":ui-list")
+    implementation project(":ui-detail")
+
     implementation Libs.Kotlin.stdlib
 
     implementation Libs.AndroidX.appcompat

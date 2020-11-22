@@ -9,6 +9,20 @@
         android:id="@+id/navigation_home"
         android:name="com.suleymancelik.github.ui.list.ui.RepoListFragment"
         android:label="@string/title_repo_list"
-        tools:layout="@layout/fragment_repo_list" />
+        tools:layout="@layout/fragment_repo_list">
+        <action
+            android:id="@+id/action_navigation_list_to_detail"
+            app:destination="@id/repoDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@id/repoDetailFragment"
+        android:name="com.suleymancelik.github.ui.detail.RepositoryDetailFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_repo_detail">
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
