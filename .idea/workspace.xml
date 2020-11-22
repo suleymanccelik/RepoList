@@ -16,11 +16,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[39V7N19227017288]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,6 +67,11 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common-ui/src/main/res/values-night" />
+      <recent name="$PROJECT_DIR$/common-ui/src/main/res/values" />
+      <recent name="$PROJECT_DIR$/buildSrc/src/main/java/com.suleymancelik.github.buildsrc" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.suleymancelik.github.di" />
       <recent name="com.suleymancelik.github.core.di" />
@@ -63,22 +79,17 @@
       <recent name="com.suleymancelik.github.core.module" />
       <recent name="com.suleymancelik.github.core.viewmodel" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.suleymancelik.github.ui.list.ui" />
+      <recent name="com.suleymancelik.github.data.common" />
+      <recent name="com.suleymancelik.github.core" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/common-ui/src/main/res/values" />
       <recent name="$PROJECT_DIR$/data/src/main/java/com/suleymancelik/github/data/common" />
       <recent name="$PROJECT_DIR$/common-ui/src/main/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/common-ui/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/ui-list" />
-    </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.suleymancelik.github.ui.list.ui" />
-      <recent name="com.suleymancelik.github.data.common" />
-      <recent name="com.suleymancelik.github.core" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/common-ui/src/main/res/values-night" />
-      <recent name="$PROJECT_DIR$/common-ui/src/main/res/values" />
-      <recent name="$PROJECT_DIR$/buildSrc/src/main/java/com.suleymancelik.github.buildsrc" />
     </key>
   </component>
   <component name="RunManager">
