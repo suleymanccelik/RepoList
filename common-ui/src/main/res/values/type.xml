@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Github.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+
+        <item name="android:textSize">96sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Body1" parent="TextAppearance.MaterialComponents.Body1">
+
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Body2" parent="TextAppearance.MaterialComponents.Body2">
+
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Github.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

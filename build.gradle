@@ -1,0 +1,47 @@
+import com.suleymancelik.github.buildsrc.Libs
+
+buildscript {
+    ext.kotlin_version = '1.4.10'
+    ext.kotlin_version = Libs.Kotlin.version
+    ext.buildConfig = [
+            'compileSdk': 29,
+            'minSdk'    : 21,
+            'targetSdk' : 29,
+    ]
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+        jcenter()
+    }
+
+    dependencies {
+        classpath Libs.androidGradlePlugin
+
+        classpath Libs.Kotlin.gradlePlugin
+        classpath Libs.Kotlin.extensions
+
+        classpath Libs.realmGradlePlugin
+        classpath Libs.AndroidX.Navigation.safeArgs
+    }
+}
+
+subprojects {
+
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+        mavenLocal()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

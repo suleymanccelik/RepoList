@@ -1,0 +1,7 @@
+include ':common-ui'
+include ':data'
+include ':ui-list'
+include ':ui-detail'
+include ':core'
+include ':app'
+rootProject.name = "Github Account"
