@@ -14,8 +14,7 @@ abstract class RepoListItemModel : ViewBindingEpoxyModelWithHolder<ItemRepoListB
     lateinit var repo: RepoListModelItem
 
     @EpoxyAttribute
-    lateinit var listener: (service: RepoListModelItem) -> Unit
-
+    lateinit var listener: (repo: RepoListModelItem) -> Unit
 
     override fun getDefaultLayout(): Int = R.layout.item_repo_list
 

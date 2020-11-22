@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Github Account</string>
 
     <string name="title_repo_list">Repository List</string>
 
@@ -9,6 +10,11 @@
     <string name="service_error_title">Service Error</string>
     <string name="service_error_info">The service is not accessible due to a technical problem.</string>
 
+
+    <string name="submit_button">Submit</string>
     <string name="search_hint">Enter github username</string>
+
+    <string name="star_count">Star Count : %d</string>
+    <string name="issue_count">Issue Count : %d</string>
 
 </resources>

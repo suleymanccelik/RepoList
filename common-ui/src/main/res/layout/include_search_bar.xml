@@ -14,25 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/icon_search"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="@dimen/spacing_medium"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:backgroundTint="@color/grey_90"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dash_search" />
-
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/search_text"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/spacing_medium"
             android:ellipsize="end"
-            android:gravity="start|center_vertical"
+            android:gravity="start"
             android:hint="@string/search_hint"
             android:imeOptions="actionSearch|flagNoExtractUi"
             android:inputType="text|textNoSuggestions"
@@ -43,7 +31,7 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan|adjustNothing"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/icon_close"
-            app:layout_constraintStart_toEndOf="@+id/icon_search"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -54,10 +42,23 @@
             android:tint="@color/grey_90"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_submit"
             app:layout_constraintStart_toEndOf="@+id/search_text"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/icon_delete_search_query" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/SubmitButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:layout_marginEnd="@dimen/spacing_minor"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_close"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

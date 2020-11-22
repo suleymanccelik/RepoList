@@ -53,9 +53,10 @@ class RepoListFragment : BaseMvRxFragment(R.layout.fragment_repo_list),
 
     override fun listener(repository: RepoListModelItem) {
         val bundle = bundleOf(
-            "star" to repository.stargazersCount,
+            "starCount" to repository.stargazersCount,
             "issueCount" to repository.openIssuesCount,
             "imageUrl" to repository.owner.avatarUrl,
+            "ownerName" to repository.owner.login,
             "title" to repository.name
         )
         findNavController().navigate(
@@ -136,11 +137,29 @@ class RepoListFragment : BaseMvRxFragment(R.layout.fragment_repo_list),
 
     private fun prepareInitialPage() {
         mRepoListViewBinding.searchView.searchText.doAfterTextChanged {
-            prepareSearchOperation(it.toString())
+            //prepareSearchOperation(it.toString())
+            closeIconStatus(it.toString())
         }
+        mRepoListViewBinding.searchView.btnSubmit.setOnClickListener {
+            mSearchQuery = mRepoListViewBinding.searchView.searchText.text.toString()
+            if (!mSearchQuery.isNullOrEmpty()) {
+                mSearchQuery?.let {
+                    mRepoListViewModel.makeSearchOperation(it)
+                }
+            }
+        }
+
         mRepoListViewBinding.searchView.iconClose.setOnClickListener {
             mRepoListViewBinding.searchView.searchText.clearFocus()
             mRepoListViewBinding.searchView.searchText.text?.clear()
+        }
+    }
+
+    private fun closeIconStatus(query: String) {
+        if (query.isEmpty()) {
+            mRepoListViewBinding.searchView.iconClose.visibility = View.GONE
+        } else {
+            mRepoListViewBinding.searchView.iconClose.visibility = View.VISIBLE
         }
     }
 

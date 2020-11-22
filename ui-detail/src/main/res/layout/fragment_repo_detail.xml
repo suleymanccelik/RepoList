@@ -14,7 +14,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/institution_logo_card"
+            android:id="@+id/card_container_owner_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_minor"
@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/institution_detail_logo"
+                android:id="@+id/img_owner_logo"
                 android:layout_width="128dp"
                 android:layout_height="128dp"
                 android:layout_margin="@dimen/spacing_medium"
@@ -36,7 +36,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt_institution_name"
+            android:id="@+id/txt_owner_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_medium"
@@ -47,7 +47,7 @@
             android:maxLines="2"
             android:textAppearance="?attr/textAppearanceHeadline6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/institution_logo_card"
+            app:layout_constraintStart_toEndOf="@id/card_container_owner_logo"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -56,7 +56,7 @@
         android:id="@+id/txt_star_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_major"
         android:layout_marginTop="@dimen/spacing_major"
         android:layout_marginEnd="@dimen/spacing_medium"
         android:ellipsize="end"
@@ -71,7 +71,7 @@
         android:id="@+id/txt_issue_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_major"
         android:layout_marginTop="@dimen/spacing_major"
         android:layout_marginEnd="@dimen/spacing_medium"
         android:ellipsize="end"

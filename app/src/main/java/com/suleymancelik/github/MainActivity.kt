@@ -20,6 +20,11 @@ class MainActivity : DaggerAppCompatActivity() {
         prepareNavigation()
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
+        return navController.navigateUp() || super.onSupportNavigateUp()
+    }
+
     private fun prepareNavigation() {
         setSupportActionBar(mainActivityBinding.toolbar)
         val navController = findNavController(R.id.nav_host_fragment)
@@ -27,7 +32,5 @@ class MainActivity : DaggerAppCompatActivity() {
             setOf(R.id.navigation_home)
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-        }
     }
 }

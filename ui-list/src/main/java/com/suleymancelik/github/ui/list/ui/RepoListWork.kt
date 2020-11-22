@@ -8,12 +8,12 @@ import kotlinx.coroutines.Dispatchers
 import javax.inject.Inject
 
 class RepoListWork @Inject constructor(
-    private val institutionListRepository: RepoListRepository
+    private val repoListRepository: RepoListRepository
 ) : SuspendingWorkInteractor<RepoListWork.Params, Result<List<RepoListModelItem>>>() {
     override val dispatcher: CoroutineDispatcher = Dispatchers.IO
 
     override suspend fun doWork(params: Params): Result<List<RepoListModelItem>> {
-        return institutionListRepository.provideRepoList(params.username)
+        return repoListRepository.provideRepoList(params.username)
     }
 
     data class Params(val username: String)
