@@ -10,17 +10,13 @@ import androidx.core.widget.doAfterTextChanged
 import androidx.navigation.fragment.findNavController
 import com.airbnb.mvrx.*
 import com.suleymancelik.github.common.ui.viewBinding
-import com.suleymancelik.github.core.helper.NetworkHelper
 import com.suleymancelik.github.data.common.EmptyListException
 import com.suleymancelik.github.data.common.NetworkErrorException
 import com.suleymancelik.github.data.repo.RepoListModelItem
 import com.suleymancelik.github.ui.list.R
 import com.suleymancelik.github.ui.list.databinding.FragmentRepoListBinding
 import com.suleymancelik.github.ui.list.ui.epoxy.RepoListUIController
-import io.realm.Realm
-import io.realm.kotlin.where
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
 class RepoListFragment : BaseMvRxFragment(R.layout.fragment_repo_list),

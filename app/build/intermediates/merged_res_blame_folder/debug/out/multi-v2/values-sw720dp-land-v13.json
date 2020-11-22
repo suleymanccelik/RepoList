@@ -4,7 +4,7 @@
             "outputFile": "/Users/suleymancelik/Development/GithubList/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/suleymancelik/.gradle/caches/transforms-2/files-2.1/ea86b879b4c64fe28ab2999eed04cefe/jetified-core-3.2.1/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+                    "source": "/Users/suleymancelik/.gradle/caches/transforms-2/files-2.1/215bad2a157dacf6a86f84eec54413c0/jetified-core-3.2.1/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

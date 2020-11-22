@@ -22,8 +22,6 @@ buildscript {
 
         classpath Libs.Kotlin.gradlePlugin
         classpath Libs.Kotlin.extensions
-
-        classpath Libs.realmGradlePlugin
         classpath Libs.AndroidX.Navigation.safeArgs
     }
 }
