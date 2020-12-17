@@ -8,3 +8,4 @@ RepoList is a multi-module app to show Github repo list and detail.
   - MvRx
   - ePoxy
   - Dagger 2
+  - Coil
