@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit
 abstract class Interactor<in P> {
     protected abstract val scope: CoroutineScope
 
-
     operator fun invoke(params: P, timeoutMs: Long = defaultTimeoutMs): Flow<InvokeStatus> {
         val channel = ConflatedBroadcastChannel<InvokeStatus>(InvokeIdle)
         scope.launch {
@@ -39,16 +38,6 @@ abstract class Interactor<in P> {
     companion object {
         private val defaultTimeoutMs = TimeUnit.MINUTES.toMillis(5)
     }
-}
-
-abstract class ResultInteractor<in P, R> {
-    abstract val dispatcher: CoroutineDispatcher
-
-    suspend operator fun invoke(params: P): R {
-        return withContext(dispatcher) { doWork(params) }
-    }
-
-    protected abstract suspend fun doWork(params: P): R
 }
 
 interface ObservableInteractor<T> {
