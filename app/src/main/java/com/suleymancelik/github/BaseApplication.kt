@@ -8,10 +8,8 @@ import com.suleymancelik.github.di.AppComponent
 import com.suleymancelik.github.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import timber.log.Timber
 
-@ExperimentalCoroutinesApi
 class BaseApplication : DaggerApplication() {
 
     private lateinit var appComponent: AppComponent

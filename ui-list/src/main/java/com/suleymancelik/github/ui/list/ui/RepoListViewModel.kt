@@ -8,11 +8,9 @@ import com.suleymancelik.github.core.viewmodel.AssistedViewModelFactory
 import com.suleymancelik.github.core.viewmodel.DaggerMvRxViewModelFactory
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
-@ExperimentalCoroutinesApi
 class RepoListViewModel @AssistedInject constructor(
     @Assisted state: RepoListState,
     private val repoListWork: RepoListWork

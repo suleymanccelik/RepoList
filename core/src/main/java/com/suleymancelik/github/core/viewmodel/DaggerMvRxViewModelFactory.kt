@@ -2,7 +2,6 @@ package com.suleymancelik.github.core.viewmodel
 
 import com.airbnb.mvrx.*
 import com.suleymancelik.github.core.MvRxViewModel
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 /**
  * A [MvRxViewModelFactory] which makes it easy to create instances of a ViewModel
@@ -28,7 +27,6 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
  *
  * }
  */
-@ExperimentalCoroutinesApi
 abstract class DaggerMvRxViewModelFactory<VM : MvRxViewModel<S>, S : MavericksState>(
     private val viewModelClass: Class<out MvRxViewModel<S>>
 ) : MavericksViewModelFactory<VM, S> {

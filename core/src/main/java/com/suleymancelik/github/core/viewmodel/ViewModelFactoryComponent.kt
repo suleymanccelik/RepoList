@@ -2,9 +2,7 @@ package com.suleymancelik.github.core.viewmodel
 
 import dagger.BindsInstance
 import dagger.Component
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 
-@ExperimentalCoroutinesApi
 @Component(
     modules = [
         ViewModelFactoryModule::class

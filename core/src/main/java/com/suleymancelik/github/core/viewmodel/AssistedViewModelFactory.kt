@@ -2,7 +2,6 @@ package com.suleymancelik.github.core.viewmodel
 
 import com.airbnb.mvrx.MavericksState
 import com.suleymancelik.github.core.MvRxViewModel
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 /*
  * Serves as a supertype for AssistedInject factories in ViewModels.
@@ -54,11 +53,9 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
  *   val viewModelFactories: Map<Class<out BaseViewModel<*>>, AssistedViewModelFactory<*, *>>
  * )
  */
-@ExperimentalCoroutinesApi
 interface AssistedViewModelFactory<VM: MvRxViewModel<S>, S: MavericksState> {
     fun create(state: S): VM
 }
 
 
-@OptIn(ExperimentalCoroutinesApi::class)
 typealias FactoriesMap = Map<Class<out MvRxViewModel<*>>, AssistedViewModelFactory<*, *>>

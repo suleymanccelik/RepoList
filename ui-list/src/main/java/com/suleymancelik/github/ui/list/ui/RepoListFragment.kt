@@ -17,9 +17,7 @@ import com.suleymancelik.github.data.repo.RepoListModelItem
 import com.suleymancelik.github.ui.list.R
 import com.suleymancelik.github.ui.list.databinding.FragmentRepoListBinding
 import com.suleymancelik.github.ui.list.ui.epoxy.RepoListUIController
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 
-@ExperimentalCoroutinesApi
 class RepoListFragment : BaseFragment(R.layout.fragment_repo_list),
     RepoListUIController.AdapterCallbacks {
 
