@@ -1,9 +1,7 @@
 package com.suleymancelik.github.core.viewmodel
 
-import com.airbnb.mvrx.MvRxState
-import com.airbnb.mvrx.MvRxViewModelFactory
-import com.airbnb.mvrx.ViewModelContext
-import com.suleymancelik.github.core.BaseViewModel
+import com.airbnb.mvrx.*
+import com.suleymancelik.github.core.MvRxViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 /**
@@ -31,17 +29,19 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
  * }
  */
 @ExperimentalCoroutinesApi
-abstract class DaggerMvRxViewModelFactory<VM : BaseViewModel<S>, S : MvRxState>(
-    private val viewModelClass: Class<out BaseViewModel<S>>
-) : MvRxViewModelFactory<VM, S> {
+abstract class DaggerMvRxViewModelFactory<VM : MvRxViewModel<S>, S : MavericksState>(
+    private val viewModelClass: Class<out MvRxViewModel<S>>
+) : MavericksViewModelFactory<VM, S> {
 
     override fun create(viewModelContext: ViewModelContext, state: S): VM? {
         return createViewModel(state)
     }
 
-    private fun <VM : BaseViewModel<S>, S : MvRxState> createViewModel(state: S): VM {
-        val viewModelFactoryMap = ViewModelFactoryComponent.getInstance().provideViewModelFactories()
+    private fun <VM : MvRxViewModel<S>, S : MavericksState> createViewModel(state: S): VM {
+        val viewModelFactoryMap =
+            ViewModelFactoryComponent.getInstance().provideViewModelFactories()
         val viewModelFactory = viewModelFactoryMap[viewModelClass]
+
         @Suppress("UNCHECKED_CAST")
         val castedViewModelFactory = viewModelFactory as? AssistedViewModelFactory<VM, S>
         val viewModel = castedViewModelFactory?.create(state)

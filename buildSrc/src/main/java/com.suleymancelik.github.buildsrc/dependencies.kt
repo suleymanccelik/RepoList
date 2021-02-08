@@ -7,10 +7,10 @@ object Versions {
 
 object Libs {
 
-    const val androidGradlePlugin = "com.android.tools.build:gradle:4.1.1"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:4.1.2"
     const val realmGradlePlugin = "io.realm:realm-gradle-plugin:${Versions.realm}"
 
-    const val mvRx = "com.airbnb.android:mvrx:1.5.1"
+    const val mvRx = "com.airbnb.android:mavericks:2.0.0"
 
     const val junit = "junit:junit:4.12"
     const val robolectric = "org.robolectric:robolectric:4.3.1"
@@ -93,7 +93,7 @@ object Libs {
         }
 
         object Work {
-            private const val version = "2.4.0"
+            private const val version = "2.5.0"
             const val runtimeKtx = "androidx.work:work-runtime-ktx:$version"
         }
     }

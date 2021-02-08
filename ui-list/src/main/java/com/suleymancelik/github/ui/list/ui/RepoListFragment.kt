@@ -9,6 +9,7 @@ import androidx.core.os.bundleOf
 import androidx.core.widget.doAfterTextChanged
 import androidx.navigation.fragment.findNavController
 import com.airbnb.mvrx.*
+import com.suleymancelik.github.common.ui.BaseFragment
 import com.suleymancelik.github.common.ui.viewBinding
 import com.suleymancelik.github.data.common.EmptyListException
 import com.suleymancelik.github.data.common.NetworkErrorException
@@ -19,7 +20,7 @@ import com.suleymancelik.github.ui.list.ui.epoxy.RepoListUIController
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 @ExperimentalCoroutinesApi
-class RepoListFragment : BaseMvRxFragment(R.layout.fragment_repo_list),
+class RepoListFragment : BaseFragment(R.layout.fragment_repo_list),
     RepoListUIController.AdapterCallbacks {
 
     private val mRepoListViewModel: RepoListViewModel by fragmentViewModel()

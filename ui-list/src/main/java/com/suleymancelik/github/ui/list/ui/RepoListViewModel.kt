@@ -1,10 +1,9 @@
 package com.suleymancelik.github.ui.list.ui
 
-import androidx.lifecycle.viewModelScope
 import com.airbnb.mvrx.Fail
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject
-import com.suleymancelik.github.core.BaseViewModel
+import com.suleymancelik.github.core.MvRxViewModel
 import com.suleymancelik.github.core.helper.launchObserve
 import com.suleymancelik.github.core.viewmodel.AssistedViewModelFactory
 import com.suleymancelik.github.core.viewmodel.DaggerMvRxViewModelFactory
@@ -16,7 +15,7 @@ import kotlinx.coroutines.launch
 class RepoListViewModel @AssistedInject constructor(
     @Assisted state: RepoListState,
     private val repoListWork: RepoListWork
-) : BaseViewModel<RepoListState>(state) {
+) : MvRxViewModel<RepoListState>(state) {
 
     fun makeSearchOperation(userName: String) {
         viewModelScope.launch {

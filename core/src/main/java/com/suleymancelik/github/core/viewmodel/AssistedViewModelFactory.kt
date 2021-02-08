@@ -1,7 +1,7 @@
 package com.suleymancelik.github.core.viewmodel
 
-import com.airbnb.mvrx.MvRxState
-import com.suleymancelik.github.core.BaseViewModel
+import com.airbnb.mvrx.MavericksState
+import com.suleymancelik.github.core.MvRxViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 /*
@@ -55,10 +55,10 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
  * )
  */
 @ExperimentalCoroutinesApi
-interface AssistedViewModelFactory<VM: BaseViewModel<S>, S: MvRxState> {
+interface AssistedViewModelFactory<VM: MvRxViewModel<S>, S: MavericksState> {
     fun create(state: S): VM
 }
 
 
 @OptIn(ExperimentalCoroutinesApi::class)
-typealias FactoriesMap = Map<Class<out BaseViewModel<*>>, AssistedViewModelFactory<*, *>>
+typealias FactoriesMap = Map<Class<out MvRxViewModel<*>>, AssistedViewModelFactory<*, *>>

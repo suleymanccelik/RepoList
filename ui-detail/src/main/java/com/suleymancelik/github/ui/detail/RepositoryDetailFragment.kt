@@ -4,11 +4,12 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import coil.load
-import com.airbnb.mvrx.BaseMvRxFragment
+import com.airbnb.mvrx.MavericksView
+import com.suleymancelik.github.common.ui.BaseFragment
 import com.suleymancelik.github.common.ui.viewBinding
 import com.suleymancelik.github.ui.detail.databinding.FragmentRepoDetailBinding
 
-class RepositoryDetailFragment : BaseMvRxFragment(R.layout.fragment_repo_detail) {
+class RepositoryDetailFragment : BaseFragment(R.layout.fragment_repo_detail) {
 
     private val mRepoDetailViewBinding by viewBinding(FragmentRepoDetailBinding::bind)
     private var mInflaterContext: Context? = null

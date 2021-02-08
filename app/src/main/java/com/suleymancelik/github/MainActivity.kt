@@ -1,8 +1,6 @@
 package com.suleymancelik.github
 
 import android.os.Bundle
-import android.view.View
-import android.widget.ImageView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController

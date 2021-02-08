@@ -1,5 +1,6 @@
 package com.suleymancelik.github
 
+import com.airbnb.mvrx.Mavericks
 import com.suleymancelik.github.core.DaggerCoreComponent
 import com.suleymancelik.github.core.viewmodel.DaggerViewModelFactoryComponent
 import com.suleymancelik.github.core.viewmodel.ViewModelFactoryComponent
@@ -18,6 +19,7 @@ class BaseApplication : DaggerApplication() {
 
     override fun onCreate() {
         super.onCreate()
+        Mavericks.initialize(this)
         configureComponents()
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())

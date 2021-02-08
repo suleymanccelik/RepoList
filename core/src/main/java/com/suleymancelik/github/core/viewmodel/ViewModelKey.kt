@@ -1,6 +1,6 @@
 package com.suleymancelik.github.core.viewmodel
 
-import com.suleymancelik.github.core.BaseViewModel
+import com.suleymancelik.github.core.MvRxViewModel
 import dagger.MapKey
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlin.reflect.KClass
@@ -10,4 +10,4 @@ import kotlin.reflect.KClass
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION)
 @MapKey
-annotation class ViewModelKey(val value: KClass<out BaseViewModel<*>>)
+annotation class ViewModelKey(val value: KClass<out MvRxViewModel<*>>)

@@ -33,10 +33,8 @@ inline fun <reified T> Call<T>.executeForResult(): Result<T> {
     }
 }
 
-@Suppress("REDUNDANT_INLINE_SUSPEND_FUNCTION_TYPE")
 suspend fun <T> Response<T>.toResult(): Result<T> = toResult { it }
 
-@Suppress("REDUNDANT_INLINE_SUSPEND_FUNCTION_TYPE")
 suspend fun <T, E> Response<T>.toResult(mapper: suspend (T) -> E): Result<E> {
     return try {
         if (isSuccessful) {
