@@ -5,7 +5,7 @@ RepoList is a multi-module app to show Github repo list and detail.
   - Retrofit
   - OkHTTP
   - Moshi
-  - MvRx
+  - Maveriks
   - ePoxy
   - Dagger 2
   - Coil
