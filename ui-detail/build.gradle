@@ -58,7 +58,6 @@ dependencies {
 
     implementation Libs.Google.material
     implementation Libs.AndroidX.recyclerview
-    implementation Libs.FastAdapter.adapter
     implementation Libs.Coil.coil
 
     implementation Libs.mvRx

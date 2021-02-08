@@ -98,13 +98,8 @@ object Libs {
         }
     }
 
-    object RxJava {
-        const val rxJava = "io.reactivex.rxjava2:rxjava:3.0.0"
-        const val rxAndroid = "io.reactivex.rxjava2:rxandroid:3.0.0"
-    }
-
     object Dagger {
-        private const val version = "2.27"
+        private const val version = "2.31"
         const val dagger = "com.google.dagger:dagger:$version"
         const val androidSupport = "com.google.dagger:dagger-android-support:$version"
         const val compiler = "com.google.dagger:dagger-compiler:$version"
@@ -140,12 +135,7 @@ object Libs {
     }
 
     object Coil {
-        private const val version = "1.0.0"
+        private const val version = "1.1.1"
         const val coil = "io.coil-kt:coil:$version"
-    }
-
-    object FastAdapter {
-        private const val version = "5.2.4"
-        const val adapter = "com.mikepenz:fastadapter:$version"
     }
 }

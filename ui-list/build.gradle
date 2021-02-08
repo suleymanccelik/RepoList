@@ -48,16 +48,12 @@ dependencies {
 
     implementation Libs.Google.material
     implementation Libs.AndroidX.recyclerview
-    implementation Libs.FastAdapter.adapter
     implementation Libs.Coil.coil
 
     implementation Libs.Dagger.dagger
     implementation Libs.Dagger.androidSupport
     kapt Libs.Dagger.compiler
     kapt Libs.Dagger.androidProcessor
-
-    compileOnly Libs.AssistedInject.annotationDagger2
-    kapt Libs.AssistedInject.processorDagger2
 
     implementation Libs.mvRx
     implementation Libs.Kotlin.reflect

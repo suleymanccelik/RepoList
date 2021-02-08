@@ -83,9 +83,6 @@ dependencies {
     kapt Libs.Dagger.compiler
     kapt Libs.Dagger.androidProcessor
 
-    compileOnly Libs.AssistedInject.annotationDagger2
-    kapt Libs.AssistedInject.processorDagger2
-
     testImplementation Libs.junit
     androidTestImplementation Libs.AndroidX.Test.junitX
     androidTestImplementation Libs.AndroidX.Test.espressoCore

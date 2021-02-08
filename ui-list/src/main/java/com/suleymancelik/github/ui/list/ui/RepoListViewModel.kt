@@ -1,12 +1,13 @@
 package com.suleymancelik.github.ui.list.ui
 
 import com.airbnb.mvrx.Fail
-import com.squareup.inject.assisted.Assisted
-import com.squareup.inject.assisted.AssistedInject
+
 import com.suleymancelik.github.core.MvRxViewModel
 import com.suleymancelik.github.core.helper.launchObserve
 import com.suleymancelik.github.core.viewmodel.AssistedViewModelFactory
 import com.suleymancelik.github.core.viewmodel.DaggerMvRxViewModelFactory
+import dagger.assisted.Assisted
+import dagger.assisted.AssistedInject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -41,7 +42,7 @@ class RepoListViewModel @AssistedInject constructor(
         }
     }
 
-    @AssistedInject.Factory
+    @dagger.assisted.AssistedFactory
     interface Factory : AssistedViewModelFactory<RepoListViewModel, RepoListState> {
         override fun create(state: RepoListState): RepoListViewModel
     }
